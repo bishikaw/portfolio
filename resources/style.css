@@ -1,0 +1,148 @@
+body {
+    font-size: 30px;
+    font-family: 'ubuntu';
+    margin: 0;
+}
+
+main {
+    position: relative;
+    top: 5.5rem;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.linebreak {
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.section-title {
+    text-align: center;
+}
+
+/* header section */
+
+header {
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    height: 5.5;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: white;
+}
+
+header #logo {
+    padding-left: .75rem;
+}
+
+header li {
+    display: inline-block;
+    text-align: right;
+    font-size: 1.75rem;
+    padding-right: 1rem;
+}
+
+header a {
+    text-decoration: none;
+}
+
+
+/*About section */
+
+#about {
+    height: auto;
+    min-height: 45rem;
+    justify-content: center;
+    align-items: center;
+    background-image: url("stephen-leonardi-ogTJl8Be8e4-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#about img {
+    height: 9rem;
+    width: 9rem;
+    border-radius: 50%;
+}
+
+#about .image-container {
+    margin-top: 13rem;
+    margin-bottom: 0;
+}
+
+#info {
+    color: white;
+    width: 33%;
+    max-width: 33%;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 13rem;
+}
+
+#info h1 {
+    margin-top: 0;
+    margin-bottom: .5rem;
+}
+
+#info h2 {
+    font-size: 1.5rem;
+    font-weight: normal;
+    margin-top: .5rem;
+}
+
+/* Projects section */
+
+#projects {
+    justify-content: center;
+}
+
+#collection {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1em 15%;
+    justify-content: center;
+}
+
+.project-card {
+    width: 34rem;
+    height: 24rem;
+    margin: .25rem;
+}
+
+#first-project {
+    background-image: url("kelly-sikkema-gcHFXsdcmJE-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#second-project {
+    background-image: url("rami-al-zayat-w33-zg-dNL4-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+#third-project {
+    background-image: url("nordwood-themes-bJjsKbToY34-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.project-description {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 87%;
+    z-index: 1;
+    padding: 1.5rem;
+    visibility: hidden;
+}
+
+.project-description:hover {
+    visibility: visible;
+}

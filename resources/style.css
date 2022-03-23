@@ -14,6 +14,16 @@ main {
     flex-wrap: wrap;
 }
 
+.image-container {
+    overflow: hidden;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
 .linebreak {
     width: 100%;
     margin-top: 0;
@@ -111,38 +121,14 @@ header a {
 
 .project-card {
     width: 34rem;
-    height: 24rem;
+    height: auto;
     margin: .25rem;
 }
 
-#first-project {
-    background-image: url("kelly-sikkema-gcHFXsdcmJE-unsplash.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-#second-project {
-    background-image: url("rami-al-zayat-w33-zg-dNL4-unsplash.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-
-#third-project {
-    background-image: url("nordwood-themes-bJjsKbToY34-unsplash.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
 .project-description {
-    color: white;
-    background-color: rgba(0, 0, 0, 0.5);
-    height: 87%;
+    display: none;
+    color: black;
+    text-align: center;
     z-index: 1;
     padding: 1.5rem;
-    visibility: hidden;
-}
-
-.project-description:hover {
-    visibility: visible;
 }
